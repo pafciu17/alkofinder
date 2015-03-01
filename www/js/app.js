@@ -1,4 +1,8 @@
-angular.module('AlkoFinder', ['ionic', 'AlkoFinder.controllers', 'AlkoFinder.services'])
+var controllers = angular.module('AlkoFinder.controllers', []);
+
+var services = angular.module('AlkoFinder.services', []);
+
+var app = angular.module('AlkoFinder', ['ionic', 'AlkoFinder.controllers', 'AlkoFinder.services'])
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('app', {
