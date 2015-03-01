@@ -18,7 +18,7 @@
         </ion-header-bar>
         <ion-content ng-controller="StoreListController as ctrl">
             <ion-list>
-                <ion-item ng-repeat="store in ctrl.stores">
+                <ion-item ng-repeat="store in ctrl.stores" ng-click="ctrl.centerOn(store)">
                     {{ store.Name }}
                 </ion-item>
             </ion-list>
