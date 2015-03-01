@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "ngCordova": "~0.1.12-alpha",
-    "google-map": "GoogleWebComponents/google-map#~0.4.1"
+    "google-map": "GoogleWebComponents/google-map#~0.4.1",
+    "lodash": "~3.3.1"
   }
 }
