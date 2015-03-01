@@ -10,8 +10,7 @@ angular.module('AlkoFinder', ['ionic', 'AlkoFinder.controllers', 'AlkoFinder.ser
                 url: "/map",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/map.html",
-                        controller: 'StoreListCtrl'
+                        templateUrl: "templates/map.html"
                     }
                 }
             });
@@ -20,9 +19,7 @@ angular.module('AlkoFinder', ['ionic', 'AlkoFinder.controllers', 'AlkoFinder.ser
 
     .config(function($sceDelegateProvider) {
         $sceDelegateProvider.resourceUrlWhitelist([
-            // Allow same origin resource loads.
             'self',
-            // Allow loading from our assets domain.  Notice the difference between * and **.
             'http://pnie.eu'
         ]);
     })

@@ -16,9 +16,9 @@
         <ion-header-bar class="bar-stable">
             <h1 class="title">Stores</h1>
         </ion-header-bar>
-        <ion-content ng-controller="StoreListCtrl">
+        <ion-content ng-controller="StoreListController as ctrl">
             <ion-list>
-                <ion-item ng-repeat="store in stores">
+                <ion-item ng-repeat="store in ctrl.stores">
                     {{ store.Name }}
                 </ion-item>
             </ion-list>

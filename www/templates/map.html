@@ -1,6 +1,6 @@
-<ion-view view-title="AlkoFinder">
+<ion-view view-title="AlkoFinder" ng-controller="MapController as ctrl">
     <google-map latitude="62.77493" longitude="22.41942" style="width:100%; height:100%" disableDefaultUI="true">
-        <google-map-marker ng-repeat="store in stores" latitude="{{ store.lat }}" longitude="{{ store.lng }}" >
+        <google-map-marker ng-repeat="store in ctrl.stores" latitude="{{ store.lat }}" longitude="{{ store.lng }}" >
         </google-map-marker>
     </google-map>
 </ion-view>
