@@ -1,8 +1,6 @@
 angular.module('AlkoFinder.controllers', [])
-
-.controller('StoreListCtrl', function($scope) {
-
-})
-.controller('PlaylistsCtrl', function($scope, Stores) {
-  $scope.stores = Stores.getStores();
-});
+    .controller('StoreListCtrl', function($scope, Stores) {
+        Stores.getStores().then(function(stores) {
+            $scope.stores = stores;
+        });
+    });
