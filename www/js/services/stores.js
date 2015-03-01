@@ -32,5 +32,4 @@ services.service('Stores', function($q, $http) {
         return $q.when(stores);
     };
 
-
 });
